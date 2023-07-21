@@ -1,0 +1,12 @@
+<%- include('./includes/head.ejs') %> 
+
+<%- include('./includes/nav.ejs') %>
+
+<h1><%= users.length > 0 ? 'Found Users' : 'No Users Found' %></h1>
+<ul>
+  <% users.forEach(user => { %>
+  <li><%= user %></li>
+<% }) %> 
+</ul>
+
+<%- include('./includes/end.ejs') %>
